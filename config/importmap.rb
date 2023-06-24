@@ -18,5 +18,5 @@ pin_all_from "app/javascript/controllers", under: "controllers"
 # Pin npm packages by running ./bin/importmap
 
 pin "application", preload: true
-pin "price", to: "price.js"
-pin "card", to: "card.js"
+pin "price", to: "price.js",preload: true
+pin "card", to: "card.js",preload: true
