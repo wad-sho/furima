@@ -1,8 +1,22 @@
-# Pin npm packages by running ./bin/importmap
+# # Pin npm packages by running ./bin/importmap
 
-pin "application", preload: true
+# pin "application", preload: true
+# pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
+# pin "@hotwired/stimulus", to: "stimulus.min.js", preload: true
+# pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
+# pin_all_from "app/javascript/controllers", under: "controllers"
+# # Pin npm packages by running ./bin/importmap
+
+# pin "application", preload: true
+
+
+# config/importmap.rb
 pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
 pin "@hotwired/stimulus", to: "stimulus.min.js", preload: true
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
-pin_all_from "app/javascript/items", under: "/items"
+# Pin npm packages by running ./bin/importmap
+
+pin "application", preload: true
+pin "price", to: "price.js"
+pin "card", to: "card.js"
