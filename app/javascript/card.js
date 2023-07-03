@@ -1,16 +1,8 @@
 let payjp;
-
-
 const initializePayjp = () => {
- 
- // gonが定義されているか否かの条件分岐
+
  if (typeof gon == 'undefined') return null;
-
-
  const publicKey = gon.public_key
-
-
- // payjsがインスタンス化されているか否かの条件分岐
  if (!payjp) {
    payjp = Payjp(publicKey)
  }
@@ -19,9 +11,7 @@ const initializePayjp = () => {
 const pay = () => {
 const form = document.getElementById('charge-form')
 
- // 購入ページのみコードを読み込むための条件分岐
  if (!form) return null;
-
 
  const publicKey = gon.public_key
  console.log(publicKey)
@@ -53,7 +43,6 @@ const form = document.getElementById('charge-form')
    e.preventDefault();
  });
 };
-
 
 window.addEventListener("turbo:load", () => {
  initializePayjp();
